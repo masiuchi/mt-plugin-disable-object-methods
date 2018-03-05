@@ -1,0 +1,12 @@
+name: DisableObjectMethods
+version: 0.01
+description: <__trans phrase="Set disable_object_methods registry for old plugins.">
+plugin_link: https://github.com/masiuchi/mt-plugin-disable-object-methods
+author_name: Masahiro IUCHI
+author_link: https://github.com/masiuchi
+
+applications:
+  cms:
+    callbacks:
+      init_app: $DisableObjectMethods::MT::Plugin::DisableObjectMethods::Callback::init_app
+
